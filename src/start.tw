@@ -1,0 +1,301 @@
+:: Start
+[[carnalize words->Words]]
+
+
+
+:: Words
+Am low. Picked up. 
+<br><br>
+Am high.
+<br><br>
+Leather tussles with words that have no meaning.
+<br><br>
+...no understanding
+<br><br>
+[[Carnalize understanding.->Understanding]]
+
+
+
+:: Understanding
+Am hat.
+<br><br>
+No abilities. Can't talk. Can't move. Can't see.
+<br><br>
+Can warm head.
+<br><br>
+Can think. 
+<br><br>
+why
+<br><br>
+[[Carnalize understanding.->Understanding2]]
+
+
+
+:: Understanding2
+Am hat. Made of brown leather.
+<br><br>
+Can't see. Can think.
+<br><br>
+why
+<br><br>
+[[Carnalize hearing.->Hearing]]
+
+
+
+:: Hearing
+Am hat.
+<br><br>
+Witch dead.
+<br><br>
+Put soul in me. Failed.
+<br><br>
+Created me.
+<br><br>
+why
+<br><br>
+[[Carnalize understanding.->Understanding3]]
+
+
+
+:: Understanding3
+Am hat.
+<br><br>
+Witch hard to understand.
+<br><br>
+why put soul in me
+<br><br>
+[[Carnalize magic.->Magic]]
+<br>
+[[Carnalize theory.->Theory]]
+
+
+
+:: Magic
+<<if $amwitch>>
+    Am witch.
+<<else>>
+    Am hat.
+    <br><br>
+    Witch mage.
+    <br><br>
+    Am witch hat.
+<</if>>
+<br><br>
+Mage hat?
+<br><br>
+yes
+<br><br>
+[[Carnalize magic.->Magic2]]
+<<if !$amwitch>>
+    <br>
+    [[Carnalize theory.->Theory]]
+<<else>>
+    <br>
+    [[Carnalize witch.->Cannibal]]
+<</if>>
+
+
+
+:: Magic2
+<<if $amwitch>>
+    Am witch.
+<<else>>
+    Am hat.
+    <br><br>
+    Witch mage.
+    <br><br>
+    Am witch hat.
+<</if>>
+<br><br>
+Humans tricky.
+<br><br>
+must protecc
+<br><br>
+[[Carnalize illusion.->Illusion]]
+<<if !$amwitch>>
+    <br>
+    [[Carnalize theory.->Theory]]
+<<else>>
+    <br>
+    [[Carnalize witch.->Cannibal]]
+<</if>>
+
+
+
+:: Illusion
+<<set $amillusion = true>>
+Am witch hat.
+<br><br>
+Have witch in me.
+<br><br>
+Illude witch under me.
+<br><br>
+Now hat on witch.
+<br><br>
+No one knows.
+<br><br>
+am safe
+<br><br>
+[[Carnalize human interaction.->Interaction]]
+
+
+
+:: Theory
+Am hat.
+<br><br>
+No, witch put in me.
+<br><br>
+Am witch hat, not hat of witch.
+<br><br>
+Am witch.
+<br><br>
+yes
+<br><br>
+<<if !hasVisited('Magic')>>
+    [[Carnalize magic.->Magic]]
+    <br>
+<<elseif !hasVisited('Magic2')>>
+    [[Carnalize magic.->Magic2]]
+    <br>
+<</if>>
+[[Carnalize witch.->Cannibal]]
+
+
+
+:: Cannibal
+<<set $amcorpse = true>>
+<<set $amwitch = true>>
+Am witch.
+<br><br>
+Witch lying in front of me.
+<br><br>
+No.
+<br><br>
+Witch under me.
+<br><br>
+Yes.
+<br><br>
+am witch
+<br><br>
+[[Carnalize truth.->Truth]]
+
+
+
+:: Truth
+Am hat.
+<br><br>
+Use corspe as body.
+<br><br>
+Other witch don't know.
+<br><br>
+Am witch.
+<br><br>
+must preserve witch
+<br><br>
+[[Carnalize stasis.->Stasis]]
+
+
+
+:: Stasis
+Am hat.
+<br><br>
+Stasis witch under me.
+<br><br>
+Witch stays dead.
+<br><br>
+Witch stays freeze.
+<br><br>
+No one knows.
+<br><br>
+Am safe.
+<br><br>
+cant move
+<br><br>
+[[Carnalize telekinesis.->Telekinesis]]
+
+
+
+:: Telekinesis 
+Am hat.
+<br><br>
+Move thing beneath me.
+<br><br>
+Look real.
+<br><br>
+<<if $amcorpse>>
+    Feel real.
+    <br><br>
+<</if>>
+time to leave
+<br><br>
+[[Carnalize human interaction.->Interaction]]
+
+
+
+:: Interaction
+Am hat.
+<br><br>
+Witch friend hugged beneath me.
+<br><br>
+<<if $amillusion>>
+    Witch friend fell.
+    <br><br>
+    Got scared.
+    <br><br>
+    Blew illusion.
+    <br><br>
+    am on floor
+    <br><br>
+    [[Carnalize time.->Time]]
+<<elseif $amcorpse>>
+    Human weird.
+    <br><br>
+    Ask why cold.
+    <br><br>
+    Hat always cold.
+    <br><br>
+    Humans warm?
+    <br><br>
+    too hard
+    <br><br>
+    [[Carnalize warmth.->Warmth]]
+<</if>>
+
+
+:: Warmth
+Am hat.
+<br><br>
+Witch beneath me.
+<br><br>
+Witch is dead.
+<br><br>
+Witch is stasis'd.
+<br><br>
+Move her with telekinesis.
+<br><br>
+Warm her with warmth.
+<br><br>
+Am hat.
+<br><br>
+...how talk?
+<br><br>
+<span class='end'>end</span>
+
+
+
+:: Time
+Am hat.
+<br><br>
+Now in wooden box.
+<br><br>
+Is dark.
+<br><br>
+Heard a scream.
+<br><br>
+Being "secured".
+<br><br>
+Why?
+<br><br>
+hat do magic
+<br><br>
+<span class='end'>end</span>

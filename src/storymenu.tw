@@ -1,0 +1,39 @@
+:: StoryMenu
+<<link "START">>
+    <<set $amwitch = false>> 
+    <<set $amcorpse = false>>
+    <<set $amillusion = false>>
+    <<goto "Start">>
+<</link>>
+[[About]]
+[[Credits]]
+<a id='bgm-option'>BGM Music<br><<volume>></a>
+
+
+
+:: About
+Created by <a href='https://leahiel.itch.io/'  target="_blank" rel="noopener noreferrer">LeahPeach</a> for the <a href='https://itch.io/jam/neo-twiny-jam-24' target="_blank" rel="noopener noreferrer">NeoTwiny 2024 Jam</a>.
+<br><br>
+Word Count: 383.
+<br>
+Passage Count: 17.
+
+
+
+:: Credits
+I normally write fantasty smut, so if that you're thing and you're of a legal age, check out my <a href='https://leahiel.itch.io/' target="_blank" rel="noopener noreferrer">itch</a> I guess.
+<br><br>
+Sjoerd and Chapel made the volume slider. See <a href='https://github.com/SjoerdHekking/volume-slider-for-sugarcube2/tree/master' target="_blank" rel="noopener noreferrer">the github</a>.
+<br><br>
+Sigils created with Watabou's <a href='https://watabou.itch.io/sigil-generator' target="_blank" rel="noopener noreferrer">Sigil Generator</a> with custom license: "You can use images created by the generator as you like: copy, modify, include in your commercial rpg adventures etc. Attribution is appreciated, but not required. Please consider supporting this project on <a href='https://www.patreon.com/watawatabou' target="_blank" rel="noopener noreferrer">Patreon</a>!"
+<br><br>
+Fonts Used:
+<br>
+Cutive Mono [OFL] https://fonts.google.com/specimen/Cutive+Mono
+<br>
+LXGW WenKai TC [OFL] https://fonts.google.com/specimen/LXGW+WenKai+TC
+<br><br>
+Oh, and the song is mine too.
+<br>
+I made it like 5 years ago. I got into it back then, and made 15 pieces of music, and then never made anything musical ever again lol.
+Song has no title, but I have it saved as "WaveShop8.ogg" lol

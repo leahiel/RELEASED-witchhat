@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Cutive;
+    src: url(assets/CutiveMono-Regular.tff),
+        url(src/assets/CutiveMono-Regular.ttf);
+        
+}
+
+@font-face {
+    font-family: LXGW;
+    src: url(assets/LXGWWenKaiTC-Regular.ttf),
+        url(src/assets/LXGWWenKaiTC-Regular.ttf);
+        
+}
+
+body {
+    background-color: #060606;
+    overflow-x: hidden;
+}
+
+#ui-bar {
+    background-color: #111;
+}
+
+#story {
+    overflow-x: hidden;
+}
+
+.sigil {
+    position: absolute;
+    display: none;
+    z-index: -999;
+    filter: brightness(25%);
+}
+
+.passage {
+    text-align: center;
+    font-family: LXGW;
+    font-size: 1.2em;
+
+    .end,
+    .link-internal {
+        font-family: Cutive;
+        font-size: 1.15em;
+    }
+
+    a {
+        color: hsl(284, 100%, 70%);
+    }
+
+    a:hover {
+        color: hsl(284, 100%, 77%);
+    }
+}
+
+ul#menu-story {
+    border: none;
+
+    li {
+        border: 1px solid #444;
+    }
+
+    li:has(> a#bgm-option) {
+        margin-top: 1em;
+    }
+
+    li a:hover {
+        background-color: #222;
+        border-color: #707070;
+    }
+
+    a#bgm-option {
+        /* margin-top: 1em; */
+    }
+
+    a#bgm-option:hover {
+        background-color: unset;
+        border-color: transparent;
+        cursor: default;
+    }
+}
+
+#menu-core {
+    display: none;
+}

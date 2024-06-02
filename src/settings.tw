@@ -1,0 +1,126 @@
+:: StoryTitle
+am hat
+
+
+
+:: StoryData
+{
+    "ifid": "90D969F5-1FF3-4213-9398-F10B007FA3A6",
+    "format": "SugarCube",
+    "format-version": "2.37.0-alpha.20+1"
+}
+
+
+
+:: StorySubtitle
+A Cute Game
+
+
+
+:: StoryAuthor
+LeahPeach
+
+
+:: StoryInit
+<<run SimpleAudio.tracks.add('bgm', 'assets/WaveShop8.ogg', 'src/assets/WaveShop8.ogg');>>
+<<set $bgm = SimpleAudio.tracks.get('bgm');>>
+<<if !$bgm.isPlaying()>>
+    <<run $bgm.playWhenAllowed();>>
+    <<run $bgm.loop(true)>>
+    <<run $bgm.fade(4, settings['volume'], 0)>>
+<</if>>
+
+<<set $sigils = [
+    "assets/sigils/sigil (1).png",
+    "assets/sigils/sigil (2).png",
+    "assets/sigils/sigil (3).png",
+    "assets/sigils/sigil (4).png",
+    "assets/sigils/sigil (5).png",
+    "assets/sigils/sigil (6).png",
+    "assets/sigils/sigil (7).png",
+    "assets/sigils/sigil (8).png",
+    "assets/sigils/sigil (9).png",
+    "assets/sigils/sigil (10).png",
+    "assets/sigils/sigil (11).png",
+    "assets/sigils/sigil (12).png",
+    "assets/sigils/sigil (13).png",
+    "assets/sigils/sigil (14).png",
+    "assets/sigils/sigil (15).png",
+    "assets/sigils/sigil (16).png",
+    "assets/sigils/sigil (17).png",
+    "assets/sigils/sigil (18).png",
+    "assets/sigils/sigil (19).png",
+    "assets/sigils/sigil (20).png",
+    "assets/sigils/sigil (21).png",
+    "assets/sigils/sigil (22).png",
+    "assets/sigils/sigil (23).png",
+    "assets/sigils/sigil (24).png",
+    "assets/sigils/sigil (25).png",
+    "assets/sigils/sigil (26).png",
+    "assets/sigils/sigil (27).png",
+    "assets/sigils/sigil (28).png",
+    "assets/sigils/sigil (29).png",
+    "assets/sigils/sigil (30).png",
+    "assets/sigils/sigil (31).png",
+    "assets/sigils/sigil (32).png",
+    "assets/sigils/sigil (33).png",
+    "assets/sigils/sigil (34).png",
+    "assets/sigils/sigil (35).png",
+    "assets/sigils/sigil (36).png",
+    "assets/sigils/sigil (37).png",
+    "assets/sigils/sigil (38).png",
+    "assets/sigils/sigil (39).png",
+    "assets/sigils/sigil (40).png",
+    "assets/sigils/sigil (41).png",
+    "assets/sigils/sigil (42).png",
+    "assets/sigils/sigil (43).png",
+    "assets/sigils/sigil (44).png",
+    "assets/sigils/sigil (45).png",
+    "assets/sigils/sigil (46).png",
+    "assets/sigils/sigil (47).png",
+    "assets/sigils/sigil (48).png",
+    "assets/sigils/sigil (49).png",
+    "assets/sigils/sigil (50).png",
+    "assets/sigils/sigil (51).png",
+    "assets/sigils/sigil (52).png",
+    "assets/sigils/sigil (53).png",
+    "assets/sigils/sigil (54).png",
+    "assets/sigils/sigil (55).png",
+]>>
+
+<<set $amwitch = false>> 
+<<set $amcorpse = false>>
+<<set $amillusion = false>>
+
+<<script>>
+let sv = State.variables;
+function randomIntFromInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function drawImage() {
+    if (Math.random() > .3) {
+        console.log('trying to draw image');
+        var $image = $('<img>', {class: 'sigil'});
+        $image.attr('src', sv.sigils.random());
+        $image.attr('width', '')
+
+        let size = randomIntFromInterval(15, 40);
+        $image.css('width', `${size}vh`);
+        $image.css('height', `${size}vh`);
+        $image.css('top', `${randomIntFromInterval(5, 59)}vh`);
+        $image.css('left', `${randomIntFromInterval(5, 80)}vw`);
+        $image.css('transform', `rotate(${randomIntFromInterval(0, 359)}deg)`);
+
+        $('#story').append($image);
+        $image.fadeIn(randomIntFromInterval(3000, 8000)).delay(randomIntFromInterval(500, 8000)).fadeOut(randomIntFromInterval(1000, 8000));
+    }
+
+    let nextTry = randomIntFromInterval(3000, 8000);
+    setTimeout(drawImage, nextTry);
+}
+
+drawImage();
+
+
+<</script>>
