@@ -13,7 +13,7 @@ am hat
 
 
 :: StorySubtitle
-A Cute Game
+mage hat
 
 
 
@@ -116,11 +116,10 @@ function drawImage() {
         $image.fadeIn(randomIntFromInterval(3000, 8000)).delay(randomIntFromInterval(500, 8000)).fadeOut(randomIntFromInterval(1000, 8000));
     }
 
-    let nextTry = randomIntFromInterval(3000, 8000);
+    let nextTry = randomIntFromInterval(1000, 5000);
     setTimeout(drawImage, nextTry);
 }
 
 drawImage();
-
-
 <</script>>
+ 

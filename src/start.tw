@@ -4,11 +4,13 @@
 
 
 :: Words
-Am low. Picked up. 
+Am low. 
 <br><br>
-Am high.
+Now high.
 <br><br>
-Leather tussles with words that have no meaning.
+Leather tussles.
+<br><br>
+Words have no meaning.
 <br><br>
 ...no understanding
 <br><br>
@@ -19,7 +21,7 @@ Leather tussles with words that have no meaning.
 :: Understanding
 Am hat.
 <br><br>
-No abilities. Can't talk. Can't move. Can't see.
+ Can't talk. Can't move. Can't see.
 <br><br>
 Can warm head.
 <br><br>
@@ -32,11 +34,13 @@ why
 
 
 :: Understanding2
-Am hat. Made of brown leather.
+Am hat. Brown leather.
 <br><br>
 Can't see. Can think.
 <br><br>
-why
+Why?
+<br><br>
+cant hear
 <br><br>
 [[Carnalize hearing.->Hearing]]
 
@@ -45,11 +49,12 @@ why
 :: Hearing
 Am hat.
 <br><br>
+<br><br>
+No more words.
+<br><br>
 Witch dead.
 <br><br>
 Put soul in me. Failed.
-<br><br>
-Created me.
 <br><br>
 why
 <br><br>
@@ -60,7 +65,7 @@ why
 :: Understanding3
 Am hat.
 <br><br>
-Witch hard to understand.
+Witch make me.
 <br><br>
 why put soul in me
 <br><br>
@@ -109,7 +114,7 @@ yes
 <br><br>
 Humans tricky.
 <br><br>
-must protecc
+must protecc me
 <br><br>
 [[Carnalize illusion.->Illusion]]
 <<if !$amwitch>>
@@ -134,9 +139,11 @@ Now hat on witch.
 <br><br>
 No one knows.
 <br><br>
-am safe
+Am safe.
 <br><br>
-[[Carnalize human interaction.->Interaction]]
+cant move
+<br><br>
+[[Carnalize telekinesis.->Telekinesis]]
 
 
 
@@ -175,16 +182,16 @@ Witch under me.
 <br><br>
 Yes.
 <br><br>
-am witch
+am witch hat
 <br><br>
 [[Carnalize truth.->Truth]]
 
 
 
 :: Truth
-Am hat.
+Am witch hat.
 <br><br>
-Use corspe as body.
+Warm witch head.
 <br><br>
 Other witch don't know.
 <br><br>
@@ -197,7 +204,7 @@ must preserve witch
 
 
 :: Stasis
-Am hat.
+Am witch hat.
 <br><br>
 Stasis witch under me.
 <br><br>
@@ -205,20 +212,20 @@ Witch stays dead.
 <br><br>
 Witch stays freeze.
 <br><br>
-No one knows.
+Why?
 <br><br>
 Am safe.
 <br><br>
-cant move
+but cant move
 <br><br>
 [[Carnalize telekinesis.->Telekinesis]]
 
 
 
 :: Telekinesis 
-Am hat.
+Am witch hat.
 <br><br>
-Move thing beneath me.
+Move beneath me.
 <br><br>
 Look real.
 <br><br>
@@ -226,7 +233,7 @@ Look real.
     Feel real.
     <br><br>
 <</if>>
-time to leave
+leave
 <br><br>
 [[Carnalize human interaction.->Interaction]]
 
@@ -254,7 +261,9 @@ Witch friend hugged beneath me.
     <br><br>
     Hat always cold.
     <br><br>
-    Humans warm?
+    But hat make head warm.
+    <br><br>
+    Why witch cold?
     <br><br>
     too hard
     <br><br>
@@ -266,8 +275,6 @@ Witch friend hugged beneath me.
 Am hat.
 <br><br>
 Witch beneath me.
-<br><br>
-Witch is dead.
 <br><br>
 Witch is stasis'd.
 <br><br>
